@@ -1,7 +1,7 @@
 import React from "react";
 
 import { DetailsThumb } from "./../../components/DetailsThumb/index";
-import Rate from "./../../Rate/index";
+import Rate from "../../components/Rate/index";
 import SizeItem from "./../../components/SizeItem/index";
 import Color from "./../../components/Color/index";
 import Quantity from "./../../components/Quantity";
@@ -9,7 +9,7 @@ import SimilarProductSec from "../../components/SimilarProductSec";
 import Header from "./../../components/Header/index";
 import Breadcrambs from "./../../components/Breadcrambs/index";
 import Footer from "./../../components/Footer/index";
-import Sidebar from "../../Sidebar";
+import Sidebar from "../../components/Sidebar";
 
 class ProductDetails extends React.Component {
   state = {

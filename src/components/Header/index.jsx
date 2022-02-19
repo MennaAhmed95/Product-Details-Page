@@ -28,7 +28,7 @@ class Header extends Component {
                 width="20px"
                 height="20px"
               />
-              <span className="badge">5</span>
+              <span className="badge">1</span>
               <a href={() => false}>Card</a>
             </li>
             <li>

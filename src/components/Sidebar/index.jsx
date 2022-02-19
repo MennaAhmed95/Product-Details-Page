@@ -1,4 +1,4 @@
-import CartItem from "../components/CartItem";
+import CartItem from "../CartItem";
 import "./sidebar.scss";
 const Sidebar = ({ flag, closeNav }) => {
   return (

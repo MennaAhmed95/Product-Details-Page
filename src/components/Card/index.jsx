@@ -1,5 +1,5 @@
 import "./card.scss";
-import Rate from "./../../Rate/index";
+import Rate from "../Rate/index";
 
 const Card = ({ item }) => {
   return (
