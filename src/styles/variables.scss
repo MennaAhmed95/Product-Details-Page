@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+$Montserrat: "Montserrat", sans-serif;
+
+//colors
+$secondery: #3c3c3b;
+$primary: #ffffff;
+$yellow: #fff100;
+$black: #000000;
+$gray: #ececec;
+$darkgray: #575756;
+$Lightgray: #a7a9ac;
+$darkblue: #542e90;
+$red: #f11133;
+$bordercolor: #d8d8d8;
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border-radius
+$borderRadius: 25px;
+$borderRadiuscircle: 50%;
+
+//header-heigth
+$headerHeight: 100px;
+
+//navbar
+$navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$navbar-padding: 0.2rem;
+$navbar-link-padding-y: 0.5rem;
+$navbar-link-padding-x: 1rem;
+
+@mixin breakpoint($point) {
+  @if $point==md {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}

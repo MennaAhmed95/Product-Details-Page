@@ -1,0 +1,51 @@
+@import "./../../styles/variables.scss";
+.sec {
+  padding: 0.5 * $spacing-md;
+  display: flex;
+  flex-wrap: wrap;
+  .sec-searchBar {
+    display: flex;
+    border: 1px solid $bordercolor;
+    border-radius: $borderRadius;
+    padding: $spacing-md;
+    width: min-content;
+    ::-webkit-input-placeholder {
+      color: $secondery;
+    }
+    input:focus {
+      outline: none;
+    }
+    .sec-searchBar-text {
+      border: none;
+    }
+  }
+  .sec-img {
+    margin: 0 auto;
+  }
+  .sec-menu {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      display: flex;
+      align-items: center;
+      padding: $navbar-link-padding-y $navbar-link-padding-x;
+      font-size: small;
+      .badge {
+        font-size: 12px;
+        background: $yellow;
+        color: $secondery;
+        padding: 0 5px;
+        margin-top: -8px;
+        margin-left: -6px;
+        border-radius: 9px;
+      }
+      > a {
+        color: $secondery;
+        display: inline-block;
+        padding: 0.5 * $spacing-md;
+      }
+    }
+  }
+}

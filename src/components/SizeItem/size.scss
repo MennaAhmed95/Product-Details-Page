@@ -1,0 +1,17 @@
+@import "./../../styles/variables.scss";
+
+#circle {
+  width: 80px;
+  height: 80px;
+  border: 1px solid $bordercolor;
+  border-radius: $borderRadiuscircle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $darkblue;
+  &:hover {
+    background-color: $bordercolor;
+    color: $secondery;
+  }
+}

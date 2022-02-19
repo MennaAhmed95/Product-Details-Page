@@ -1,0 +1,53 @@
+@import "./../styles/variables.scss";
+
+.sidenav {
+  h3 {
+    color: $darkblue;
+    text-align: center;
+  }
+  h4 {
+    padding: 10px;
+  }
+  .tot {
+    text-align: center;
+    font-size: large;
+    color: $secondery;
+    margin: $spacing-md;
+  }
+  .sidebar {
+    width: 320px;
+    display: flex;
+    background: $primary;
+    box-shadow: 5px 5px 15px rgba($gray, 0.5);
+    border-radius: 10px;
+
+    .imag {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+    }
+    .product-details {
+      width: 100%;
+      margin: 1%;
+      p {
+        margin: 0.5 * $spacing-md;
+      }
+      .txt {
+        font-size: small;
+        font-weight: bold;
+      }
+      .buttons {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        .remove {
+          padding: 10px;
+          background: $yellow;
+          color: $darkblue;
+          border: 0;
+          border-radius: $borderRadius;
+        }
+      }
+    }
+  }
+}

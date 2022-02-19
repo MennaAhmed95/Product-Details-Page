@@ -1,0 +1,17 @@
+@import "./../../styles/variables.scss";
+
+.menu {
+  background-color: $secondery;
+  padding: $spacing-md 0;
+  .menu-ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    > li a {
+      color: $primary;
+    }
+    .col {
+      color: $red;
+    }
+  }
+}

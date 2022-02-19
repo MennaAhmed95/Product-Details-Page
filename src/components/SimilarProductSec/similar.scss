@@ -1,0 +1,25 @@
+@import "./../../styles/variables.scss";
+section {
+  h2 {
+    font-weight: bold;
+    font-size: larger;
+    color: $darkblue;
+  }
+  .tex {
+    color: $Lightgray;
+    margin: $spacing-md 0;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    padding: 0.5 * $spacing-md;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  hr {
+    background: $darkblue;
+    height: 0.5rem;
+    margin: 0.5 * $spacing-md 0;
+  }
+}

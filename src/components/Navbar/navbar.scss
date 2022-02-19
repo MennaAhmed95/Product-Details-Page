@@ -1,0 +1,142 @@
+@import "./../../styles/variables.scss";
+
+.navbar,
+.navbar > .container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+    height: fit-content;
+  }
+}
+
+.navbar {
+  box-shadow: $navbar-shadow;
+  background-color: $yellow;
+  padding: $navbar-padding;
+
+  .container {
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+  /*
+  |-----------------------------------
+  | Start navbar logo or brand etc..
+  |-----------------------------------
+  */
+  .navbar-header {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .navbar-toggler {
+      // border-radius: 5px;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 0 $spacing-md;
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      span {
+        height: 2px;
+        width: 22px;
+        background-color: $secondery;
+        display: block;
+      }
+      span:not(:last-child) {
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    > a {
+      font-weight: 500;
+      color: $secondery;
+    }
+    .navbar-header-text {
+      font-size: smaller;
+      padding-left: $spacing-lg * 2;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  /*
+  |-----------------------------------
+  | Start navbar menu
+  |-----------------------------------
+  */
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 1;
+
+    @media (max-width: 768px) {
+      display: none;
+      text-align: center;
+    }
+
+    // Ul
+    .navbar-nav {
+      margin-left: auto;
+      flex-direction: row;
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        display: block;
+        border-top: 1px solid #eee;
+        margin-top: 1rem;
+      }
+
+      > li {
+        display: flex;
+        align-items: center;
+        padding: $navbar-link-padding-y $navbar-link-padding-x;
+        font-size: small;
+        > a {
+          color: $secondery;
+          text-decoration: none;
+          display: inline-block;
+          padding: $spacing-md;
+          &:hover {
+            color: $primary;
+          }
+        }
+        &.active {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

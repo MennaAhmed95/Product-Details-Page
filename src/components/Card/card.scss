@@ -1,0 +1,45 @@
+@import "./../../styles/variables.scss";
+.card {
+  height: 450px;
+  border: 1px solid $bordercolor;
+  border-radius: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card-logo {
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+  padding: $spacing-md * 0.5;
+  .priceLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $spacing-md * 0.6 0;
+    .dis {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.cont-lo {
+  margin: 20px;
+  position: absolute;
+  background: $primary;
+  padding: 5px;
+  border-radius: 5px;
+  img {
+    width: 35px;
+  }
+}

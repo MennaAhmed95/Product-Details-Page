@@ -1,0 +1,40 @@
+/* The side navigation menu */
+@import "./../styles/variables.scss";
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: $primary;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  a {
+    cursor: pointer;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $Lightgray;
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
+.disWidth {
+  width: 350px;
+  padding: 1%;
+}

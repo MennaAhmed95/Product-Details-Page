@@ -1,0 +1,21 @@
+@import "./variables.scss";
+@import "./productDetails.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $Montserrat;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}

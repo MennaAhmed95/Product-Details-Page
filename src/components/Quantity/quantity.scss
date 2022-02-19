@@ -1,0 +1,52 @@
+@import "./../../styles/variables.scss";
+
+.quantity-input {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  border: 1px solid $bordercolor;
+  border-radius: 17px;
+  background-color: $gray;
+  margin: $spacing-md 0;
+}
+
+.quantity-input__modifier,
+.quantity-input__screen {
+  user-select: none;
+  outline: none;
+}
+
+.quantity-input__modifier {
+  padding: 0.7rem;
+  width: 20%;
+  background: $yellow;
+  color: $secondery;
+  border: 0 solid $bordercolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($yellow, 10%);
+    color: darken($secondery, 20%);
+  }
+
+  &--left {
+    border-radius: $borderRadiuscircle;
+  }
+
+  &--right {
+    border-radius: $borderRadiuscircle;
+  }
+}
+
+.quantity-input__screen {
+  width: 4rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  background-color: $gray;
+  text-align: center;
+  color: $secondery;
+  border: 0;
+}

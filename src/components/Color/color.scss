@@ -1,0 +1,16 @@
+@import "./../../styles/variables.scss";
+#imgCircle {
+  width: 82px;
+  height: 82px;
+  border: 1px solid $bordercolor;
+  border-radius: $borderRadiuscircle;
+  cursor: pointer;
+  margin: 0.5rem;
+  &:hover {
+    border: 1px solid $darkblue;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
